@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "UI / UX",
+    "modul": "10",
+    "siswa": "200"
+  },
+  {
+    "id": "2",
+    "name": "Front End",
+    "modul": "10",
+    "siswa": "200"
+  },
+  {
+    "id": "3",
+    "name": "Beck End",
+    "modul": "10",
+    "siswa": "200"
+  },
+  {
+    "id": "4",
+    "name": "Golang",
+    "modul": "10",
+    "siswa": "200"
+  },
+  {
+    "id": "5",
+    "name": "Data Science & Data Analysis",
+    "modul": "10",
+    "siswa": "200"
+  }
+]

@@ -1,7 +1,7 @@
 import { Poppins } from 'next/font/google';
 import './globals.css';
-import Navbar from '@/pages/header/navbar';
-import Footer from '@/pages/footer/footer';
+import Navbar from '@/pages/header/page';
+import Footer from '@/pages/footer/page';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '700'] });
 

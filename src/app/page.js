@@ -7,7 +7,7 @@ import Courses from '@/../../src/components/data/courses.json';
 export default function Home() {
   return (
     <main className=" ">
-      <div className="hero flex justify-center items-center px-[6%] gap-9 bg-gradient-to-b from-[#D2E4FF] from-5% via-[#448EFE] via-60% to-[#FAFBFC]">
+      <div className="heroHome flex justify-center items-center h-[700px] px-[6%] gap-9 bg-gradient-to-b from-[#D2E4FF] from-5% via-[#448EFE] via-60% to-[#FAFBFC]">
         <div className="herodes w-[50rem] m-5">
           <h1 className=" py-4 text-4xl font-bold">Membangun Jalan Menuju Kesuksesan Melalui Pendidikan</h1>
           <h3 className=" py-4 text-xl font-medium">Raih Pengalaman Belajar Berkualitas, Melalui Pendekatan Pendidikan yang Penuh Inovasi</h3>

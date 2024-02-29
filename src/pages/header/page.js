@@ -34,10 +34,10 @@ export default function Navbar() {
           <Link href="/" className=" px-2 py-2 hover:text-bluEdu">
             Home
           </Link>
-          <Link href="/Courses" className=" px-2 py-2 hover:text-bluEdu">
+          <Link href="/courses" className=" px-2 py-2 hover:text-bluEdu">
             Courses
           </Link>
-          <Link href="/About" className=" px-2 py-2 hover:text-bluEdu">
+          <Link href="/about" className=" px-2 py-2 hover:text-bluEdu">
             About Us
           </Link>
           <Link href="/Contac" className=" px-2 py-2 hover:text-bluEdu">

@@ -40,7 +40,7 @@ export default function Navbar() {
           <Link href="/about" className=" px-2 py-2 hover:text-bluEdu">
             About Us
           </Link>
-          <Link href="/Contac" className=" px-2 py-2 hover:text-bluEdu">
+          <Link href="/contac" className=" px-2 py-2 hover:text-bluEdu">
             Contact Us
           </Link>
         </div>

@@ -49,7 +49,7 @@ export default function Home() {
       </div>
       <div className="homeCoerses px-[6%] my-4">
         <h1 className=" text-center text-2xl font-black text-dopeEdu">Daftar Learning Path</h1>
-        <div className="courContainer flex justify-center items-center py-4  ">
+        <div id="coursesList" className="courContainer flex justify-center items-center py-4  ">
           {Courses.map((course) => {
             return (
               <div className="courCard w-64 h-96 p-4 m-5 bg-white rounded-lg border-2 border-[#F0E8E8] shadow-xl overflow-hidden" key={course.id}>

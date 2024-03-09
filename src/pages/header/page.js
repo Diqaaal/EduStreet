@@ -59,16 +59,33 @@ export default function Navbar() {
           </Link>
         </div>
         <div onClick={handleMenu} className="navMenu flex lg:hidden">
-          {menuIcon ? <Image src={menu} width={44} className="" /> : <Image src={menu} width={44} className="" />}
+          {menuIcon ? <Image src={menu} width={44} alt="icon" className="" /> : <Image src={menu} width={44} className="" />}
         </div>
-        <div
-          className={
-            menuIcon
-              ? 'md:hidden absolute top-0 left-[-100%] flex justify-center items-center w-[200px] h-screen bg-blue-100 text-white  duration-300'
-              : 'md:hidden absolute top-0 left-0 flex justify-center items-center w-[200px] h-screen bg-blue-100 text-white  duration-300'
-          }
-        >
-          Hello
+        <div className={menuIcon ? 'absolute top-0 left-[-200px] w-[200px] h-screen bg-gray-100 text-white  duration-300 lg:hidden' : 'absolute top-0 left-0 w-[200px] h-screen bg-gray-100 text-white  duration-300 lg:hidden'}>
+          <div className=" px-4">
+            <div className="navLogo flex justify-center">
+              <Image src={blueLogo} width={150} alt="Logo EduStreet" />
+            </div>
+            <div className="navLink md:flex flex-col text-dopeEdu2 text-xl font-semibold">
+              <Link href="/" className=" px-2 py-2 hover:text-bluEdu focus:text-bluEdu focus:bg-blue-100">
+                Home
+              </Link>
+              <Link href="/courses" className=" px-2 py-2 hover:text-bluEdu focus:text-bluEdu focus:bg-blue-100">
+                Courses
+              </Link>
+              <Link href="/about" className=" px-2 py-2 hover:text-bluEdu focus:text-bluEdu focus:bg-blue-100">
+                About Us
+              </Link>
+              <Link href="/contac" className=" px-2 py-2 hover:text-bluEdu focus:text-bluEdu focus:bg-blue-100">
+                Contact Us
+              </Link>
+            </div>
+            <div className="navExtra md:flex flex-col py-4 text-dopeEdu2 text-xl font-semibold">
+              <Link href="/Login" className=" px-2 py-2 w-[100%] text-center bg-orangeEdu rounded-lg hover:text-white">
+                Login
+              </Link>
+            </div>
+          </div>
         </div>
       </navbar>
     </header>

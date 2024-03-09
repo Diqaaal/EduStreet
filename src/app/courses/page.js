@@ -8,7 +8,7 @@ export default function Courses() {
     <div className="  ">
       <div className="heroCour flex justify-center items-center h-[700px] px-[6%] gap-9 bg-gradient-to-b from-[#D2E4FF] from-5% via-[#448EFE] via-60% to-[#FAFBFC]">
         <div className="">
-          <Image src={courImg1} height={400} />
+          <Image src={courImg1} height={400} alt="img" />
         </div>
         <div className=" w-[50rem] m-5">
           <h1 className=" py-4 text-4xl font-bold">Pelajari kursus kami yang membri hasil. Fokus Prakatik dan Portfolio Kamu.</h1>
@@ -16,7 +16,7 @@ export default function Courses() {
           <button className=" p-4 text-white text-lg font-bold bg-orangeEdu rounded-xl">Explore Courses</button>
         </div>
       </div>
-      <div className="courContainer flex justify-center items-center py-4  ">
+      <div className="courContainer flex px-[6%] justify-center items-center py-4  ">
         {data.map((course) => {
           return (
             <div className="courCard w-64 h-96 p-4 m-5 bg-white rounded-lg border-2 border-[#F0E8E8] shadow-xl overflow-hidden" key={course.id}>

@@ -10,11 +10,11 @@ export default function contac() {
           <h1 className=" pb-2 font-bold text-xl">Butuh Bantuan dan Dukungan</h1>
           <p className=" text-xs">Jangan ragu untuk menghubungi kami kapan saja. kami akan membalas Anda sesegera mungkin!</p>
           <div className="flex p-8 cursor-pointer">
-            <Image src={mailImg} width={22} />
+            <Image src={mailImg} width={22} alt="img" />
             <p className=" pl-4">edustreetid@gmail.com</p>
           </div>
           <div className="flex p-8 cursor-pointer">
-            <Image src={phoneImg} width={22} />
+            <Image src={phoneImg} width={22} alt="img" />
             <p className=" pl-4">+62 555-6666-4444</p>
           </div>
         </div>

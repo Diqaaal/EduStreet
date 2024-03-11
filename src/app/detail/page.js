@@ -1,4 +1,5 @@
-import { useRouter } from 'next/router';
+'use client';
+import { useRouter } from 'next/navigation';
 import data from '@/components/data/courses.json'; // Ubah dengan jalur file JSON yang sesuai
 import Image from 'next/image'; // Import Image jika Anda menggunakan Next.js Image component
 

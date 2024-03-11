@@ -3,6 +3,7 @@ import homeimg1 from '@/../../public/image/homeimg1.png';
 import homeimg2 from '@/../../public/image/homeimg2.png';
 import bookImg from '@/../../public/image/book.jpg';
 import Courses from '@/../../src/components/data/courses.json';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -52,7 +53,7 @@ export default function Home() {
         <div id="coursesList" className="courContainer flex justify-center items-center py-4  ">
           {Courses.map((course) => {
             return (
-              <div className="courCard w-64 h-96 p-4 m-5 bg-white rounded-lg border-2 border-[#F0E8E8] shadow-xl overflow-hidden" key={course.id}>
+              <div className="courCard w-64 h-96 p-4 m-5 bg-white rounded-lg border-2 border-[#F0E8E8] shadow-xl overflow-hidden hover:scale-105" key={course.id}>
                 <div className=" flex justify-center">
                   <Image src={bookImg} width="150" alt="cover" />
                 </div>

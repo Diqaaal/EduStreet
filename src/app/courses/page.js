@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import courImg1 from '@/../../public/image/homeimg1.png';
 import bookImg from '@/../../public/image/book.jpg';
@@ -19,17 +20,19 @@ export default function Courses() {
       <div className="courContainer flex px-[6%] justify-center items-center py-4  ">
         {data.map((course) => {
           return (
-            <div className="courCard w-64 h-96 p-4 m-5 bg-white rounded-lg border-2 border-[#F0E8E8] shadow-xl overflow-hidden" key={course.id}>
-              <div className=" flex justify-center">
-                <Image src={bookImg} width="150" alt="cover" />
-              </div>
-              <div className=" text-center relative">
-                <h1 className=" text-xl font-bold text-dopeEdu">{data.name}</h1>
-                <div className=" text-sm text-dopeEdu2/70 absolute right-0 left-0 top-20">
-                  <h3>{data.modul} Modul</h3>
-                  <h3>{data.siswa} Siswa</h3>
+            <div className="courCard w-64 h-96 p-4 m-5 bg-white rounded-lg border-2 border-[#F0E8E8] shadow-xl overflow-hidden hover:scale-105" key={course.id}>
+              <Link href={`/detail/${course.id}`}>
+                <div className=" flex justify-center">
+                  <Image src={bookImg} width="150" alt="cover" />
                 </div>
-              </div>
+                <div className=" text-center relative">
+                  <h1 className=" text-xl font-bold text-dopeEdu">{course.name}</h1>
+                  <div className=" text-sm text-dopeEdu2/70 absolute right-0 left-0 top-20">
+                    <h3>{course.modul} Modul</h3>
+                    <h3>{course.siswa} Siswa</h3>
+                  </div>
+                </div>
+              </Link>
             </div>
           );
         })}
